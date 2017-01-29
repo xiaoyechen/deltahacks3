@@ -5,8 +5,8 @@ public class StartGame : MonoBehaviour {
     public AsteroidManager spawner;
 	// Use this for initialization
 	void Start () {
-	
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -15,6 +15,10 @@ public class StartGame : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        spawner.enabled = true;
+        //if (collision.collider.tag == "Hand")
+        //{
+            spawner.enabled = true;
+        //}
+        
     }
 }
