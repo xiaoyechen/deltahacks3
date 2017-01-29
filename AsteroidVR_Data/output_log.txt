@@ -1,0 +1,47 @@
+Mono path[0] = 'C:/Users/mlh/Documents/deltahacks3/AsteroidVR_Data/Managed'
+Mono path[1] = 'C:/Users/mlh/Documents/deltahacks3/AsteroidVR_Data/Mono'
+Mono config path = 'C:/Users/mlh/Documents/deltahacks3/AsteroidVR_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/mlh/Documents/deltahacks3/AsteroidVR_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55301
+Multi-casting "[IP] 25.102.151.42 [Port] 55301 [Flags] 2 [Guid] 3546289634 [EditorId] 311937224 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-BFG95G2) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [25.102.151.42:55301]
+Initialize engine version: 5.4.3p4 (4dfc8d4040f2)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\LeapCSharp.NET3.5.dll (this message is harmless)
+Loading C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\LeapCSharp.NET3.5.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\mlh\Documents\deltahacks3\AsteroidVR_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on OVRScreenFade
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoScriptCache.cpp Line: 375)
+
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI.Hid> Failed to create device file:
+ 2 The system cannot find the file specified.
+
+ 
+(Filename: C:/buildslave/unity/build/PlatformDependent/Win/RawInput.cpp Line: 54)
+
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.951504 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 26ac -> priority: 1 
