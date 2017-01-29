@@ -48,7 +48,7 @@ public class AsteroidController : MonoBehaviour {
 
     void HitPlayer()
     {
-        Debug.Log("Hit camera!");
+        //Debug.Log("Hit camera!");
         Invoke("DestroyAsteroid", lifeAfterHit);
     }
 
