@@ -14,13 +14,10 @@ public class GameManager : MonoBehaviour {
         scoreText.text = "SCORE: 0";
 	}
 	
-    void Update()
-    {
-        scoreText.text = "SCORE: " + currentScore;
-    }
 
 	public void AddScore(int amount)
     {
         currentScore += amount;
+        scoreText.text = "SCORE: " + currentScore;
     }
 }
