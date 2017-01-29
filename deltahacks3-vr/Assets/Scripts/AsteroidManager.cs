@@ -3,7 +3,8 @@ using System.Collections;
 
 public class AsteroidManager : MonoBehaviour {
     public Transform[] spawnPoints;
-    public Rigidbody asteroid;
+    public Rigidbody[] asteroids;
+
     public float spawnForce;
     public float spawnTime;
 
@@ -29,12 +30,14 @@ public class AsteroidManager : MonoBehaviour {
 
     void SpawnAsteroid()
     {
+        int aid = Random.Range(0, asteroids.Length);
+
         int spid = Random.Range(0, spawnPoints.Length);
         Transform spawnPos = spawnPoints[spid];
         spawnPos.position = new Vector3(Random.Range(-100, 100),
                                         0,
                                         75);
-        asteroidInstance = Instantiate(asteroid, spawnPos.position, spawnPos.rotation) as Rigidbody;
+        asteroidInstance = Instantiate(asteroids[aid], spawnPos.position, spawnPos.rotation) as Rigidbody;
 
         
         asteroidInstance.transform.LookAt(camPos);

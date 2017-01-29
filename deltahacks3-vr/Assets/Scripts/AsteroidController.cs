@@ -9,11 +9,13 @@ public class AsteroidController : MonoBehaviour {
     private bool hitCam;
     private Vector3 direction;
     private Vector3 rotateDir;
+    private GameManager gm;
 
 	// Use this for initialization
 	void Start () {
         camPos = GameObject.FindGameObjectWithTag("MainCamera").transform;
 
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         rotateDir = new Vector3(15, 35, 30);
         direction = (camPos.position - transform.position).normalized;
         //lifeAfterHit = 2f;
@@ -45,6 +47,16 @@ public class AsteroidController : MonoBehaviour {
             HitPlayer();
         }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.tag == "Hand")
+        {
+            gm.AddScore(1);
+        }
+    }
+
+   
 
     void HitPlayer()
     {
