@@ -6,6 +6,7 @@ public class AsteroidController : MonoBehaviour {
     private Transform camPos;
     public float lifeAfterHit;
 
+    private PlayerHealth playerhealth;
     private bool hitCam;
     private Vector3 direction;
     private Vector3 rotateDir;
@@ -13,6 +14,7 @@ public class AsteroidController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         camPos = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        playerhealth = GameObject.Find("PlayerManager").GetComponent<PlayerHealth>();
 
         rotateDir = new Vector3(15, 35, 30);
         direction = (camPos.position - transform.position).normalized;
@@ -42,6 +44,7 @@ public class AsteroidController : MonoBehaviour {
         if (other.tag == "MainCamera")
         {
             hitCam = true;
+            playerhealth.GotHit();
             HitPlayer();
         }
     }
