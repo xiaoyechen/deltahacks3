@@ -39,11 +39,11 @@ public class AsteroidController : MonoBehaviour {
     
     void OnTriggerEnter(Collider other)
     {
-     /*   if (other.tag == "MainCamera")
+        if (other.tag == "MainCamera")
         {
             hitCam = true;
             HitPlayer();
-        }*/
+        }
     }
 
     void HitPlayer()
