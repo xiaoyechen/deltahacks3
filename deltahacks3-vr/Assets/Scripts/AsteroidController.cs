@@ -16,7 +16,7 @@ public class AsteroidController : MonoBehaviour {
 
         rotateDir = new Vector3(15, 35, 30);
         direction = (camPos.position - transform.position).normalized;
-        lifeAfterHit = 2f;
+        //lifeAfterHit = 2f;
         speed = 10f;
         hitCam = false;
 	}
