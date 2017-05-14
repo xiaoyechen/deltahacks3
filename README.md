@@ -1,4 +1,5 @@
 # deltahacks3
+![Game demo preview](gamepreview.gif)
 
 This app has been made by contributions from Sherry, Michael, Thomas and Matheesan.
 
